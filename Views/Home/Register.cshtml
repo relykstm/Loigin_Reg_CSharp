@@ -1,0 +1,29 @@
+@model Login_Reg.Models.RegisterUser;
+<form asp-controller="Home" asp-action="RegisterUser" method="POST">
+    <span asp-validation-for="FirstName"></span>
+    <br/>
+    <label asp-for="FirstName"></label>
+    <input type="text" asp-for="FirstName"/>
+    <br/>
+    <span asp-validation-for="LastName"></span>
+    <br/>
+    <label asp-for="LastName"></label>
+    <input type="text" asp-for="LastName"/>
+    <br/>
+    <span asp-validation-for="Email"></span>
+    <br/>
+    <label asp-for="Email"></label>
+    <input type="text" asp-for="Email"/>
+    <br/>
+    <span asp-validation-for="Password"></span>
+    <br/>
+    <label asp-for="Password"></label>
+    <input type="password" asp-for="Password"/>
+    <br/>
+    <span asp-validation-for="ConfirmPassword"></span>
+    <br/>
+    <label asp-for="ConfirmPassword"></label>
+    <input type="password" asp-for="ConfirmPassword"/>
+    <br/>
+    <input type="submit" value= "Register">
+</form>

@@ -1,0 +1,14 @@
+@model Login_Reg.Models.LoginUser;
+<form asp-controller="Home" asp-action="LoginUser" method="POST">
+    <span asp-validation-for="LoginEmail"></span>
+    <br/>
+    <br/>
+    <label>Email</label>
+    <input type="text" asp-for="LoginEmail"/>
+    <br/>
+    <br/>
+    <label>Password</label>
+    <input type="password" asp-for="LoginPassword"/>
+    <br/>
+    <input type="submit" value= "Login">
+</form>
